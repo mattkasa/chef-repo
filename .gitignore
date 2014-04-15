@@ -1,0 +1,24 @@
+.DS_Store
+.rake_test_cache
+
+###
+# Ignore Chef key files and secrets
+###
+.chef/*.pem
+.chef/encrypted_data_bag_secret
+.chef
+
+# Ignore .vagrant files and directories.  See, for example:
+# http://docs-v1.vagrantup.com/v1/docs/config/vagrant/dotfile_name.html
+.vagrant
+.vagrant/
+
+# Ignore directories used/managed by librarian-chef
+/cookbooks/*/\\.git/
+/tmp
+
+# Granicus files
+vagrant/mediamanager/*.json
+!vagrant/mediamanager/vagrant_template.json
+
+.bundle
